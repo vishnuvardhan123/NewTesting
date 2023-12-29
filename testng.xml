@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+  <test thread-count="5" name="Test">
+  
+  <parameter name="url" value="https://epmp-apimdev-cloud.optum.com/ContextLookup/v1"></parameter>
+
+  <classes>
+  <class name="Testing.RestAssured.HemiPatientSearch_PartyID"/>
+  <class name="Testing.RestAssured.Authorization">
+  </class>
+  
+  </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
